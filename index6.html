@@ -1,0 +1,55 @@
+<html>
+<head>	
+	<title>Getting Started</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		body {padding: 30px;}
+	</style>
+</head>
+<body>
+<div class="jumbotron text-center"></div>
+<script>
+	const original = 'chris';
+	const clone = 'CHRIS';
+
+	console.group('String');
+		console.log(original == 'chris'); //true
+		console.log(original == clone); //false
+		console.log(original == clone.toLowerCase()); //true
+	console.groupEnd();
+
+	const num1 = 10;
+	const num2 = '10';
+
+	console.group('Numbers');
+		console.log(num1 == num2) // True because of cohersion
+		console.log(num1 === num2) // False value and type must match
+		console.log(num1 != num2) // False
+		console.log(num1 !== num2) // True
+	console.groupEnd();
+
+	let what; //undefined
+	let thing = null;
+
+	console.group('Booleans');
+		console.log(Boolean(original)); //True
+		console.log(Boolean(what)); //False
+		console.log(Boolean(thing)); //False
+		console.log(Boolean(num1)); //True
+		console.log(Boolean(num2)); //True
+		console.log(Boolean({})); //True
+		console.log(Boolean([])); //True
+	console.groupEnd();
+
+	const firstArray = [1, 2, 3];
+	const secondArray = [1, 2, 3];
+	const firstObject = { color: 'red'};
+	const secondObject = { color: 'red'};
+
+	console.group('Objects and Arrays');
+		console.log(firstArray == secondArray); //False
+		console.log(firstObject == secondObject); //False
+	console.groupEnd();
+</script>
+</body>
+</html>

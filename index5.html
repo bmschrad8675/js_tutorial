@@ -1,0 +1,40 @@
+<html>
+<head>	
+	<title>Getting Started</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		body {padding: 30px;}
+	</style>
+</head>
+<body>
+<div class="jumbotron text-center"></div>
+<script>
+	let 	a = 10;
+	const 	b = 3,
+	      	c = 15;
+
+	const 	d = '5',
+		e = 'my name',
+		f = 'is chris';
+
+	console.group('Addition');
+		console.log(a+b); //13
+		console.log(a+c); //25
+		console.log(e + ' ' + f);
+		console.log(a + d);
+	console.groupEnd();
+
+	console.group('Multiplication')
+		console.log(a * 3);
+		console.log(a * b);
+		console.log(b * c);
+	console.groupEnd();
+
+	console.group('Incrementing')
+		console.log(a + 1);
+		console.log(a ++);
+		console.log(a += c);
+	console.groupEnd();
+</script>
+</body>
+</html>
